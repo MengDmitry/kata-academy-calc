@@ -2,7 +2,7 @@ package academy.cata.meng;
 
 /**
  * @author Dmitry Meng
- * @since $PROJECT_VERSION
+ * @since 1.0
  */
 public class Main {
     public static void main(String[] args) {
