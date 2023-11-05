@@ -5,7 +5,7 @@ package academy.cata.meng;
  * @since 1.0
  */
 public class Operations {
-    public static int sum(int a, int b) {
+    public static int add(int a, int b) {
         return a + b;
     }
 

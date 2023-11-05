@@ -13,36 +13,37 @@ class OperationsTest {
     @ParameterizedTest
     @CsvSource(value = {
             "1, 1, 2"
-    }, ignoreLeadingAndTrailingWhitespace = true)
+
+    })
     void sum_arabic_digits(int a, int b, int reference) {
-        int result = Operations.sum(a, b);
-        assertEquals(result, reference);
+        int result = Operations.add(a, b);
+        assertEquals(reference, result);
     }
 
     @ParameterizedTest
     @CsvSource(value = {
             "2, 1, 1"
-    }, ignoreLeadingAndTrailingWhitespace = true)
+    })
     void sub_arabic_digits(int a, int b, int reference) {
         int result = Operations.sub(a, b);
-        assertEquals(result, reference);
+        assertEquals(reference, result);
     }
 
     @ParameterizedTest
     @CsvSource(value = {
             "2, 2, 4"
-    }, ignoreLeadingAndTrailingWhitespace = true)
+    })
     void mul_arabic_digits(int a, int b, int reference) {
         int result = Operations.mul(a, b);
-        assertEquals(result, reference);
+        assertEquals(reference, result);
     }
 
     @ParameterizedTest
     @CsvSource(value = {
             "2, 2, 1"
-    }, ignoreLeadingAndTrailingWhitespace = true)
+    })
     void div_arabic_digits(int a, int b, int reference) {
         int result = Operations.div(a, b);
-        assertEquals(result, reference);
+        assertEquals(reference, result);
     }
 }
