@@ -4,7 +4,10 @@ package academy.cata.meng;
  * @author Dmitry Meng
  * @since 1.0
  */
-public class Operations {
+class Operations {
+    private Operations() {
+    }
+
     public static int add(int a, int b) {
         return a + b;
     }
@@ -17,7 +20,10 @@ public class Operations {
         return a * b;
     }
 
-    public static int div(int a, int b) {
+    public static int div(int a, int b) throws IllegalArgumentException {
+        if (b == 0) {
+            throw new IllegalArgumentException("Divided by 0");
+        }
         return a / b;
     }
 }

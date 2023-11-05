@@ -10,19 +10,15 @@ enum RomanCharacterType {
     X(10), IX(9), V(5), IV(4), I(1);
 
     private final int value;
-
     RomanCharacterType(int value) {
         this.value = value;
     }
-
     public int toInt() {
         return value;
     }
-
     public boolean shouldCombine(RomanCharacterType next) {
         return this.value < next.value;
     }
-
     public int toInt(RomanCharacterType next) {
         return next.value - this.value;
     }

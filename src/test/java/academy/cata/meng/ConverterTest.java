@@ -26,7 +26,6 @@ class ConverterTest {
     void roman_to_arabic_convert_test(String input, int expected) {
         assertEquals(expected, Converter.romanToArabic(input));
     }
-
     @ParameterizedTest
     @CsvSource(value = {
             "10, X",
